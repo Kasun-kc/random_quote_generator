@@ -19,7 +19,7 @@ class DetailsScreen extends StatelessWidget {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Theme.of(context).colorScheme.background,
+                Theme.of(context).colorScheme.surface,
                 Colors.white,
               ],
             ),
@@ -41,7 +41,7 @@ class DetailsScreen extends StatelessWidget {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Theme.of(context).colorScheme.background,
+              Theme.of(context).colorScheme.surface,
               Colors.white,
             ],
           ),
@@ -74,7 +74,7 @@ class DetailsScreen extends StatelessWidget {
                             Colors.white,
                             Theme.of(context)
                                 .colorScheme
-                                .background
+                                .surface
                                 .withOpacity(0.5),
                           ],
                         ),

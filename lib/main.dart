@@ -13,16 +13,44 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Random Quote Generator',
       theme: ThemeData(
-        colorScheme: ColorScheme.light(
-          primary: const Color(0xFF1C2E4A),
-          secondary: const Color.fromARGB(255, 77, 255, 130),
-          tertiary: const Color(0xFF26A69A),
-          background: const Color(0xFFF5F7FA),
+        colorScheme: const ColorScheme.light(
+          primary: Color(0xFF1C2E4A),
+          secondary: Color.fromARGB(255, 77, 255, 130),
+          tertiary: Color(0xFF26A69A),
+          background: Color(0xFFF5F7FA),
           surface: Colors.white,
           onPrimary: Colors.white,
-          onSecondary: const Color(0xFF1C2E4A),
-          onBackground: const Color(0xFF1C2E4A),
-          onSurface: const Color(0xFF34495E),
+          onSecondary: Color(0xFF1C2E4A),
+          onBackground: Color(0xFF1C2E4A),
+          onSurface: Color(0xFF34495E),
+        ),
+        fontFamily: 'Poppins',
+        textTheme: const TextTheme(
+          headlineSmall: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.w600,
+            letterSpacing: 0.15,
+          ),
+          titleLarge: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.w600,
+            letterSpacing: 0.15,
+          ),
+          titleMedium: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.w500,
+            letterSpacing: 0.15,
+          ),
+          bodyLarge: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.w400,
+            letterSpacing: 0.5,
+          ),
+          bodyMedium: TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.w400,
+            letterSpacing: 0.25,
+          ),
         ),
         appBarTheme: const AppBarTheme(
           backgroundColor: Color(0xFF1C2E4A),
