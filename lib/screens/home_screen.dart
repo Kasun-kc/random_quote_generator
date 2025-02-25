@@ -66,7 +66,8 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             // Random Quote Section
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding:
+                  const EdgeInsets.fromLTRB(20, 24, 20, 16), // Adjusted padding
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -190,7 +191,8 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             // Category Filter Section
             Container(
-              padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+              padding:
+                  const EdgeInsets.fromLTRB(20, 0, 20, 20), // Adjusted padding
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -206,7 +208,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         fontWeight: FontWeight.bold,
                       ),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 12, vertical: 12),
+                          horizontal: 16, vertical: 12), // Adjusted padding
                     ),
                     const SizedBox(width: 12),
                     ...categories.map((category) => Padding(
@@ -222,7 +224,8 @@ class _HomeScreenState extends State<HomeScreen> {
                               fontWeight: FontWeight.bold,
                             ),
                             padding: const EdgeInsets.symmetric(
-                                horizontal: 12, vertical: 12),
+                                horizontal: 16,
+                                vertical: 12), // Adjusted padding
                           ),
                         )),
                   ],
@@ -232,14 +235,16 @@ class _HomeScreenState extends State<HomeScreen> {
             // Quotes List
             Expanded(
               child: ListView.builder(
-                padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+                padding: const EdgeInsets.fromLTRB(
+                    20, 8, 20, 32), // Adjusted padding
                 itemCount: displayedQuotes.length,
                 itemBuilder: (context, index) {
                   final quote = displayedQuotes[index];
                   return Hero(
                     tag: 'quote-card-${quote.text}',
                     child: Card(
-                      margin: const EdgeInsets.only(bottom: 20),
+                      margin:
+                          const EdgeInsets.only(bottom: 24), // Adjusted margin
                       child: InkWell(
                         onTap: () {
                           Navigator.push(
@@ -265,7 +270,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ],
                             ),
                           ),
-                          padding: const EdgeInsets.all(24),
+                          padding: const EdgeInsets.all(28), // Adjusted padding
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [

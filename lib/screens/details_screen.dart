@@ -59,7 +59,7 @@ class DetailsScreen extends StatelessWidget {
               ),
             ),
             SliverPadding(
-              padding: const EdgeInsets.all(24),
+              padding: const EdgeInsets.all(28), // Adjusted padding
               sliver: SliverToBoxAdapter(
                 child: Hero(
                   tag: 'quote-card-${quote!.text}',
@@ -79,7 +79,7 @@ class DetailsScreen extends StatelessWidget {
                           ],
                         ),
                       ),
-                      padding: const EdgeInsets.all(32),
+                      padding: const EdgeInsets.all(36), // Adjusted padding
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -94,10 +94,11 @@ class DetailsScreen extends StatelessWidget {
                                   height: 1.4,
                                 ),
                           ),
-                          const SizedBox(height: 24),
+                          const SizedBox(height: 28), // Adjusted spacing
                           Container(
                             padding: const EdgeInsets.symmetric(
-                                horizontal: 16, vertical: 8),
+                                horizontal: 20,
+                                vertical: 10), // Adjusted padding
                             decoration: BoxDecoration(
                               color: Theme.of(context)
                                   .colorScheme
@@ -120,7 +121,7 @@ class DetailsScreen extends StatelessWidget {
                                   ),
                             ),
                           ),
-                          const SizedBox(height: 24),
+                          const SizedBox(height: 28), // Adjusted spacing
                           Text(
                             "Source: ${quote!.source}",
                             style: Theme.of(context)
@@ -131,9 +132,10 @@ class DetailsScreen extends StatelessWidget {
                                   fontStyle: FontStyle.italic,
                                 ),
                           ),
-                          const SizedBox(height: 32),
+                          const SizedBox(height: 36), // Adjusted spacing
                           Container(
-                            padding: const EdgeInsets.all(24),
+                            padding:
+                                const EdgeInsets.all(28), // Adjusted padding
                             decoration: BoxDecoration(
                               color: Theme.of(context)
                                   .colorScheme

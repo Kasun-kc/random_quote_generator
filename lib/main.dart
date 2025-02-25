@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 
+/// Main entry point for the Random Quote Generator application.
 void main() {
   runApp(const MyApp());
 }
 
+/// The root widget of the Random Quote Generator application.
+///
+/// This widget sets up the application theme, styling, and initial route.
 class MyApp extends StatelessWidget {
+  /// Creates a new instance of [MyApp].
   const MyApp({super.key});
 
   @override
